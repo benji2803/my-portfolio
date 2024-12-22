@@ -4,7 +4,7 @@ import './Home.css'; // If the CSS file exists
 function Home() {
   return (
     <div>
-      <h1>Welcome to the Home component</h1>
+      <h1>POOOEPJOPNFWNFJEFPNFWJFN</h1>
     </div>
   );
 }
