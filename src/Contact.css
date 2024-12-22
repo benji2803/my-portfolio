@@ -1,0 +1,23 @@
+.contact {
+    padding: 20px;
+    background-color: #2e2e2e;
+    color: #fff;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #228b22;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
