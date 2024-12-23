@@ -1,11 +1,49 @@
 /* src/styles/App.css */
 
-/* Existing Styles */
-
-.App {
-  text-align: center;
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Light Mode (Default) */
+body {
+  background-color: #ffffff; /* Light background */
+  color: #000000; /* Dark text */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text */
+}
+
+/* App styles */
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header styles */
+.App-header {
+  background-color: #282c34; /* Dark background for header */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Link style */
+.App-link {
+  color: #61dafb;
+}
+
+/* Smooth rotation for logo (if you have one) */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -17,21 +55,22 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Dark Mode Button styling */
+button {
+  font-size: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 10px;
+  margin: 20px;
+  transition: color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  color: #61dafb; /* Add a hover effect to the button */
 }
 
+/* Keyframes for App-logo spin (if you have a logo) */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -40,15 +79,3 @@
     transform: rotate(360deg);
   }
 }
-
-/* Dark Mode Styles */
-
-body.dark {
-  background-color: #121212;
-  color: white;
-}
-
-body {
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition between light and dark mode */
-}
-
