@@ -18,51 +18,46 @@ body.dark {
   color: #ffffff; /* Light text */
 }
 
+/* Gradient Text for Light Mode */
+.gradient-text-light {
+  background: linear-gradient(45deg, #ff6a00, #ee0979); /* Orange to pink gradient */
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: background 0.5s ease; /* Smooth transition for background change */
+}
+
+/* Gradient Text for Dark Mode */
+body.dark .gradient-text-light {
+  background: linear-gradient(45deg, #4f00b5, #8e2de2); /* Purple gradient for dark mode */
+}
+
+/* App layout */
 .App {
-  display: flex;              /* Use flexbox for layout */
-  flex-direction: column;     /* Stack content vertically */
-  min-height: 100vh;          /* Ensure the app takes at least full height */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   text-align: center;
   font-family: 'Arial', sans-serif;
 }
 
-/* App Main Content - Ensure space for main content */
+/* App content */
 .App-main {
-  flex: 1; /* This will take up remaining space, pushing contact to bottom */
+  flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: center; /* Center content vertically */
 }
 
-/* Header styles */
+/* Header styling */
 .App-header {
-  background-color: #282c34; /* Dark background for header */
-  width: 100%;
+  font-size: 2rem;
   padding: 20px;
-  font-size: calc(10px + 2vmin);
-  color: green;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-/* Dark mode header */
-body.dark .App-header {
-  background-color: #333; /* Darker background for header in dark mode */
-  color: #fff; /* Light text in dark mode */
-}
-
-/* Link style */
-.App-link {
-  color: #61dafb;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-/* Dark mode links */
-body.dark .App-link {
-  color: #4fa3f7; /* Slightly lighter blue for links in dark mode */
-}
-
-/* Dark Mode Toggle Button Styling */
+/* Dark Mode Toggle Styling */
 .dark-mode-toggle {
   font-size: 24px;
   border: none;
@@ -70,76 +65,8 @@ body.dark .App-link {
   cursor: pointer;
   padding: 10px;
   margin: 20px;
-  transition: color 0.3s ease;
 }
 
-/* Dark mode toggle button hover */
 .dark-mode-toggle:hover {
-  color: #ff0000; /* Light blue hover effect */
+  color: #61dafb;
 }
-
-/* Button styling */
-button {
-  font-size: 24px;
-  border: none;
-  background: rgb(137, 43, 226);
-  cursor: pointer;
-  padding: 10px;
-  margin: 20px;
-  transition: background-color 0.3s ease, transform 0.1s ease;
-}
-
-button:hover {
-  background-color: #3c23ab; /* Darker blueviolet on hover */
-}
-
-button:focus {
-  outline: none; /* Remove the default focus outline */
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5); /* Add a custom focus outline */
-}
-
-button:active {
-  transform: scale(0.98); /* Slightly shrink the button on click */
-}
-
-/* Smooth rotation for logo (if you have one) */
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-/* Keyframes for App-logo spin (if you have a logo) */
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* Contact section */
-.Contact {
-  padding: 20px;
-  margin-top: 40px;
-}
-
-/* Responsive Design: Adjustments for smaller screens */
-@media (max-width: 768px) {
-  .App-header {
-    padding: 10px;
-    font-size: calc(8px + 1.5vmin);
-  }
-
-  button {
-    font-size: 20px;
-    padding: 8px;
-  }
-}
-
