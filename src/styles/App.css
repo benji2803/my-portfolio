@@ -75,14 +75,14 @@ body.dark .App-link {
 
 /* Dark mode toggle button hover */
 .dark-mode-toggle:hover {
-  color: #61dafb; /* Light blue hover effect */
+  color: #ff0000; /* Light blue hover effect */
 }
 
 /* Button styling */
 button {
   font-size: 24px;
   border: none;
-  background: blueviolet;
+  background: rgb(137, 43, 226);
   cursor: pointer;
   padding: 10px;
   margin: 20px;
@@ -90,12 +90,12 @@ button {
 }
 
 button:hover {
-  background-color: #3f23ab; /* Darker blueviolet on hover */
+  background-color: #3c23ab; /* Darker blueviolet on hover */
 }
 
 button:focus {
   outline: none; /* Remove the default focus outline */
-  box-shadow: 0 0 5px 2px rgba(0, 0, 255, 0.5); /* Add a custom focus outline */
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5); /* Add a custom focus outline */
 }
 
 button:active {
