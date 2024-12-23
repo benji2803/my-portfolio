@@ -6,7 +6,7 @@
 
 h1 {
   font-size: 3rem;
-  background: linear-gradient(to right, #716c6b, #000000); /* Gradient text */
+  background: linear-gradient(to right, #716c6b, #593535); /* Gradient text */
   -webkit-background-clip: text; /* For Webkit-based browsers (Chrome, Safari) */
   background-clip: text; /* Standard property for other browsers */
   -webkit-text-fill-color: transparent; /* For Webkit-based browsers (Chrome, Safari) */
