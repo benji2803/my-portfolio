@@ -21,9 +21,10 @@ body.dark {
 /* Gradient Text for Light Mode */
 .gradient-text-light {
   background: linear-gradient(45deg, #ff6a00, #ee0979); /* Orange to pink gradient */
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; /* WebKit (Safari, older browsers) */
+  background-clip: text; /* Standard property */
   color: transparent;
-  transition: background 0.5s ease; /* Smooth transition for background change */
+  transition: background 0.5s ease; /* Smooth transition */
 }
 
 /* Gradient Text for Dark Mode */
@@ -69,4 +70,26 @@ body.dark .gradient-text-light {
 
 .dark-mode-toggle:hover {
   color: #61dafb;
+}
+
+/* Smooth rotation for logo (if you have one) */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Keyframes for App-logo spin (if you have a logo) */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
