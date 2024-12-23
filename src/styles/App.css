@@ -43,6 +43,21 @@ body.dark {
   color: #61dafb;
 }
 
+/* Dark Mode Toggle Button Styling */
+.dark-mode-toggle {
+  font-size: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 10px;
+  margin: 20px;
+  transition: color 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+  color: #61dafb; /* Light blue hover effect */
+}
+
 /* Smooth rotation for logo (if you have one) */
 .App-logo {
   height: 40vmin;
