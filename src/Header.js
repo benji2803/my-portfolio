@@ -4,7 +4,7 @@ import './Header.css'; // If the CSS file exists
 function Header() {
   return (
     <header>
-      <h1>This is the Header component</h1>
+      <h1>About me</h1>
     </header>
   );
 }

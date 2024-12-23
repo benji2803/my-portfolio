@@ -5,7 +5,9 @@ function Experience() {
   return (
     <div>
       <h1>Experience</h1>
-      <p>This is the Experience component</p>
+      <p>4th year CIT student</p>
+      <p>Multiple certificates</p>
+      <p>Community Vouched</p>
     </div>
   );
 }
