@@ -1,23 +1,26 @@
-.contact {
-    padding: 20px;
-    background-color: #2e2e2e;
-    color: #fff;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    margin-bottom: 10px;
-  }
-  
-  button {
-    background-color: #228b22;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
+.contact-container {
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+  padding: 50px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient text */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-size: 1.25rem;
+  color: #333; /* Regular text color */
+}
+
+a {
+  color: #feb47b; /* Link color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

@@ -1,9 +1,9 @@
 import React from 'react';
-import './Contact.css'; // If the CSS file exists
+import './Contact.css';
 
 function Contact() {
   return (
-    <div>
+    <div className="contact-container">
       <h1>REACH ME HERE</h1>
       <p>
         Email: <a href="mailto:benwebfl@gmail.com">benwebfl@gmail.com</a>
