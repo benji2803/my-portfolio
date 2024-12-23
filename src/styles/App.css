@@ -9,7 +9,7 @@
 
 /* Light Mode (Default) */
 body {
-  background-color: #ffffff; /* Light background */
+  background-color: #c74c4c; /* Light background */
   color: #000000; /* Dark text */
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
