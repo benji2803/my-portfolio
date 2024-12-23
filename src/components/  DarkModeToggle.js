@@ -1,34 +1,29 @@
 // src/components/DarkModeToggle.js
 import { useState, useEffect } from 'react';
-import { FaMoon, FaSun } from 'react-icons/fa'; // Import moon and sun icons
+import { FaMoon, FaSun } from 'react-icons/fa'; // Optional: For icon toggle
 
 function DarkModeToggle() {
-  // Retrieve the saved dark mode preference from localStorage
+  // Check if dark mode is already saved in localStorage
   const [darkMode, setDarkMode] = useState(() => {
     const savedMode = localStorage.getItem('darkMode');
     return savedMode === 'true' ? true : false;
   });
 
-  // Apply dark mode styles and save the preference to localStorage
+  // Apply dark mode styles
   useEffect(() => {
     if (darkMode) {
-      document.body.classList.add('dark'); // Add dark mode class to the body
+      document.body.classList.add('dark');
     } else {
-      document.body.classList.remove('dark'); // Remove dark mode class
+      document.body.classList.remove('dark');
     }
 
-    // Save the current dark mode state to localStorage
+    // Save dark mode state to localStorage
     localStorage.setItem('darkMode', darkMode);
   }, [darkMode]);
 
-  // Toggle dark mode when the button is clicked
-  const toggleDarkMode = () => {
-    setDarkMode(prevMode => !prevMode);
-  };
-
   return (
     <button
-      onClick={toggleDarkMode}
+      onClick={() => setDarkMode(prevMode => !prevMode)}
       style={{
         fontSize: '24px',
         border: 'none',
