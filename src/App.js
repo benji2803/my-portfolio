@@ -30,10 +30,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} /> {/* Dark Mode Toggle */}
       <Home />
       <Experience />
       <Contact />
+      <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} /> {/* Dark Mode Toggle */}
     </div>
   );
 }
