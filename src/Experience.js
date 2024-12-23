@@ -6,7 +6,6 @@ function Experience() {
     <div>
       <h1>Experience</h1>
       <p>4th year CIT student</p>
-      <p>Multiple certificates</p>
       <p>Community Vouched</p>
     </div>
   );
