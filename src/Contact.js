@@ -5,8 +5,12 @@ function Contact() {
   return (
     <div>
       <h1>REACH ME HERE</h1>
-      <p>Email:benwebfl@gmail.com</p>
-      <p>Instagram:avi1003_</p>
+      <p>
+        Email: <a href="mailto:benwebfl@gmail.com">benwebfl@gmail.com</a>
+      </p>
+      <p>
+        Instagram: <a href="https://www.instagram.com/avi1003_" target="_blank" rel="noopener noreferrer">avi1003_</a>
+      </p>
     </div>
   );
 }
