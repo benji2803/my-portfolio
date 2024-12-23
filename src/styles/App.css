@@ -1,5 +1,3 @@
-/* src/styles/App.css */
-
 /* Basic reset */
 * {
   margin: 0;
@@ -20,7 +18,6 @@ body.dark {
   color: #ffffff; /* Light text */
 }
 
-/* App styles */
 .App {
   text-align: center;
   font-family: 'Arial', sans-serif;
@@ -38,9 +35,22 @@ body.dark {
   color: green;
 }
 
+/* Dark mode header */
+body.dark .App-header {
+  background-color: #333; /* Darker background for the header in dark mode */
+  color: #fff; /* Light text in dark mode */
+}
+
 /* Link style */
 .App-link {
   color: #61dafb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Dark mode links */
+body.dark .App-link {
+  color: #4fa3f7; /* Slightly lighter blue for links in dark mode */
 }
 
 /* Dark Mode Toggle Button Styling */
@@ -54,8 +64,33 @@ body.dark {
   transition: color 0.3s ease;
 }
 
+/* Dark mode toggle button hover */
 .dark-mode-toggle:hover {
   color: #61dafb; /* Light blue hover effect */
+}
+
+/* Button styling */
+button {
+  font-size: 24px;
+  border: none;
+  background: blueviolet;
+  cursor: pointer;
+  padding: 10px;
+  margin: 20px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #3f23ab; /* Darker blueviolet on hover */
+}
+
+button:focus {
+  outline: none; /* Remove the default focus outline */
+  box-shadow: 0 0 5px 2px rgba(0, 0, 255, 0.5); /* Add a custom focus outline */
+}
+
+button:active {
+  transform: scale(0.98); /* Slightly shrink the button on click */
 }
 
 /* Smooth rotation for logo (if you have one) */
@@ -68,21 +103,6 @@ body.dark {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-/* Dark Mode Button styling */
-button {
-  font-size: 24px;
-  border: black;
-  background: blueviolet;
-  cursor: pointer;
-  padding: 10px;
-  margin: 20px;
-  transition: color 0.3s ease;
-}
-
-button:hover {
-  color: #3f23ab; /* Add a hover effect to the button */
 }
 
 /* Keyframes for App-logo spin (if you have a logo) */
