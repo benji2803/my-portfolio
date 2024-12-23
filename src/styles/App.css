@@ -1,3 +1,7 @@
+/* src/styles/App.css */
+
+/* Existing Styles */
+
 .App {
   text-align: center;
 }
@@ -36,3 +40,15 @@
     transform: rotate(360deg);
   }
 }
+
+/* Dark Mode Styles */
+
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition between light and dark mode */
+}
+
