@@ -10,7 +10,7 @@
 /* Light Mode (Default) */
 body {
   background-color: #c74c4c; /* Light background */
-  color: #000000; /* Dark text */
+  color: #7780ce; /* Dark text */
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
@@ -74,7 +74,7 @@ body.dark {
 button {
   font-size: 24px;
   border: black;
-  background: ghostwhite;
+  background: blueviolet;
   cursor: pointer;
   padding: 10px;
   margin: 20px;
@@ -82,7 +82,7 @@ button {
 }
 
 button:hover {
-  color: #61dafb; /* Add a hover effect to the button */
+  color: #3f23ab; /* Add a hover effect to the button */
 }
 
 /* Keyframes for App-logo spin (if you have a logo) */
