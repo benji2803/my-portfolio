@@ -19,25 +19,34 @@ body.dark {
 }
 
 .App {
+  display: flex;              /* Use flexbox for layout */
+  flex-direction: column;     /* Stack content vertically */
+  min-height: 100vh;          /* Ensure the app takes at least full height */
   text-align: center;
   font-family: 'Arial', sans-serif;
+}
+
+/* App Main Content - Ensure space for main content */
+.App-main {
+  flex: 1; /* This will take up remaining space, pushing contact to bottom */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically */
 }
 
 /* Header styles */
 .App-header {
   background-color: #282c34; /* Dark background for header */
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  padding: 20px;
   font-size: calc(10px + 2vmin);
   color: green;
 }
 
 /* Dark mode header */
 body.dark .App-header {
-  background-color: #333; /* Darker background for the header in dark mode */
+  background-color: #333; /* Darker background for header in dark mode */
   color: #fff; /* Light text in dark mode */
 }
 
@@ -114,3 +123,23 @@ button:active {
     transform: rotate(360deg);
   }
 }
+
+/* Contact section */
+.Contact {
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Responsive Design: Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .App-header {
+    padding: 10px;
+    font-size: calc(8px + 1.5vmin);
+  }
+
+  button {
+    font-size: 20px;
+    padding: 8px;
+  }
+}
+

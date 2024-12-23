@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import Home from './Home';
@@ -29,11 +28,18 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <Home />
-      <Experience />
+      {/* Main content container */}
+      <div className="App-main">
+        <Header />
+        <Home />
+        <Experience />
+      </div>
+
+      {/* Contact section at the bottom */}
       <Contact />
-      <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} /> {/* Dark Mode Toggle */}
+
+      {/* Dark Mode Toggle */}
+      <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
     </div>
   );
 }
