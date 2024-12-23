@@ -73,8 +73,8 @@ body.dark {
 /* Dark Mode Button styling */
 button {
   font-size: 24px;
-  border: none;
-  background: none;
+  border: black;
+  background: ghostwhite;
   cursor: pointer;
   padding: 10px;
   margin: 20px;
