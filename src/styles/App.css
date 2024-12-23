@@ -69,7 +69,7 @@ body.dark .gradient-text-light {
 }
 
 .dark-mode-toggle:hover {
-  color: #61dafb;
+  color: #61dafb; /* Hover effect for toggle button */
 }
 
 /* Smooth rotation for logo (if you have one) */
