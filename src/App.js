@@ -3,7 +3,7 @@ import Header from './Header';
 import Home from './Home';
 import Experience from './Experience';
 import Contact from './Contact';
-import DarkModeToggle from './components/DarkModeToggle'; // Import DarkModeToggle component
+import DarkModeToggle from './components/DarkModeToggle';
 
 import './styles/App.css'; // Import the global styles, including dark mode styles
 
