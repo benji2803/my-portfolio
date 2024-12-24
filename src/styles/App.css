@@ -7,14 +7,14 @@
 
 /* Light Mode (Default) */
 body {
-  background-color: #c74c4c; /* Light background */
-  color: #7780ce; /* Dark text */
+  background-color: #165112; /* Light background */
+  color: #ffffff; /* Dark text */
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
 /* Dark Mode */
 body.dark {
-  background-color: #8f1515; /* Dark background */
+  background-color: #5b0000; /* Dark background */
   color: #000000; /* Light text */
 }
 
