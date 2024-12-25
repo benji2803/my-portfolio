@@ -7,20 +7,20 @@
 
 /* Light Mode (Default) */
 body {
-  background-color: #165112; /* Light background */
+  background-color: #81aa7e; /* Light background */
   color: #ffffff; /* Dark text */
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
 /* Dark Mode */
 body.dark {
-  background-color: #5b0000; /* Dark background */
+  background-color: #000000; /* Dark background */
   color: #000000; /* Light text */
 }
 
 /* Gradient Text for Light Mode */
 .gradient-text-light {
-  background: linear-gradient(45deg, #89654b, #000000); /* Orange to pink gradient */
+  background: linear-gradient(45deg, #000000, #ec7a7a); /* Orange to pink gradient */
   -webkit-background-clip: text; /* WebKit (Safari, older browsers) */
   background-clip: text; /* Standard property */
   color: transparent;
@@ -29,7 +29,7 @@ body.dark {
 
 /* Gradient Text for Dark Mode */
 body.dark .gradient-text-light {
-  background: linear-gradient(45deg, #260750, #00d9ff); /* Purple gradient for dark mode */
+  background: linear-gradient(45deg, #ffffff, #85abb2); /* Purple gradient for dark mode */
 }
 
 /* App layout */
