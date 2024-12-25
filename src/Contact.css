@@ -1,12 +1,12 @@
 .contact-container {
-  background: linear-gradient(to right, #937c77, #bcb75a); /* Gradient background */
+  background: linear-gradient(to right, #d6ccca, #eae8ca); /* Gradient background */
   padding: 50px;
   text-align: center;
 }
 
 h1 {
   font-size: 3rem;
-  background: linear-gradient(to right, #716c6b, #593535); /* Gradient text */
+  background: linear-gradient(to right, #f8f8f8, #af8888); /* Gradient text */
   -webkit-background-clip: text; /* For Webkit-based browsers (Chrome, Safari) */
   background-clip: text; /* Standard property for other browsers */
   -webkit-text-fill-color: transparent; /* For Webkit-based browsers (Chrome, Safari) */
